@@ -1,0 +1,14 @@
+c:\users\ashapower\documents\visual studio 2012\Projects\IDE\IDE\bin\Debug\IDE.exe.config
+c:\users\ashapower\documents\visual studio 2012\Projects\IDE\IDE\bin\Debug\IDE.exe
+c:\users\ashapower\documents\visual studio 2012\Projects\IDE\IDE\bin\Debug\IDE.pdb
+c:\users\ashapower\documents\visual studio 2012\Projects\IDE\IDE\obj\Debug\IDE.csprojResolveAssemblyReference.cache
+c:\users\ashapower\documents\visual studio 2012\Projects\IDE\IDE\obj\Debug\IDE.Form1.resources
+c:\users\ashapower\documents\visual studio 2012\Projects\IDE\IDE\obj\Debug\IDE.Properties.Resources.resources
+c:\users\ashapower\documents\visual studio 2012\Projects\IDE\IDE\obj\Debug\IDE.RadForm1.resources
+c:\users\ashapower\documents\visual studio 2012\Projects\IDE\IDE\obj\Debug\IDE.csproj.GenerateResource.Cache
+c:\users\ashapower\documents\visual studio 2012\Projects\IDE\IDE\obj\Debug\IDE.exe.licenses
+c:\users\ashapower\documents\visual studio 2012\Projects\IDE\IDE\obj\Debug\IDE.exe
+c:\users\ashapower\documents\visual studio 2012\Projects\IDE\IDE\obj\Debug\IDE.pdb
+C:\Users\ASHAPOWER\Documents\Visual Studio 2012\Projects\IDE\IDER16\IDE\bin\Debug\IDE.exe.config
+C:\Users\ASHAPOWER\Documents\Visual Studio 2012\Projects\IDE\IDER16\IDE\obj\Debug\IDE.exe
+C:\Users\ASHAPOWER\Documents\Visual Studio 2012\Projects\IDE\IDER16\IDE\obj\Debug\IDE.pdb
