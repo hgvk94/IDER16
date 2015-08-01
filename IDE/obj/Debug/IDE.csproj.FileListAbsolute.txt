@@ -12,3 +12,14 @@ c:\users\ashapower\documents\visual studio 2012\Projects\IDE\IDE\obj\Debug\IDE.p
 C:\Users\ASHAPOWER\Documents\Visual Studio 2012\Projects\IDE\IDER16\IDE\bin\Debug\IDE.exe.config
 C:\Users\ASHAPOWER\Documents\Visual Studio 2012\Projects\IDE\IDER16\IDE\obj\Debug\IDE.exe
 C:\Users\ASHAPOWER\Documents\Visual Studio 2012\Projects\IDE\IDER16\IDE\obj\Debug\IDE.pdb
+C:\Users\ACER\Documents\GitHub\IDER16\IDE\bin\Debug\IDE.exe.config
+C:\Users\ACER\Documents\GitHub\IDER16\IDE\obj\Debug\IDE.exe
+C:\Users\ACER\Documents\GitHub\IDER16\IDE\obj\Debug\IDE.pdb
+C:\Users\ACER\Documents\GitHub\IDER16\IDE\bin\Debug\IDE.exe
+C:\Users\ACER\Documents\GitHub\IDER16\IDE\bin\Debug\IDE.pdb
+C:\Users\ACER\Documents\GitHub\IDER16\IDE\obj\Debug\IDE.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Documents\GitHub\IDER16\IDE\obj\Debug\IDE.Form1.resources
+C:\Users\ACER\Documents\GitHub\IDER16\IDE\obj\Debug\IDE.Properties.Resources.resources
+C:\Users\ACER\Documents\GitHub\IDER16\IDE\obj\Debug\IDE.RadForm1.resources
+C:\Users\ACER\Documents\GitHub\IDER16\IDE\obj\Debug\IDE.csproj.GenerateResource.Cache
+C:\Users\ACER\Documents\GitHub\IDER16\IDE\obj\Debug\IDE.exe.licenses

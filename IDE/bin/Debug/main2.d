@@ -1,0 +1,1 @@
+ main2.d  main2.p1:  C:/Users/ACER/Downloads/LCD-Interfacing/LCDInterfacing/lcd.X/main2.c C:/Users/ACER/Downloads/LCD-Interfacing/LCDInterfacing/lcd.X/lcd.h

@@ -39,9 +39,7 @@
             this.radTileElement1 = new Telerik.WinControls.UI.RadTileElement();
             this.customShape1 = new Telerik.WinControls.OldShapeEditor.CustomShape();
             this.radPanorama1 = new Telerik.WinControls.UI.RadPanorama();
-            this.radRichTextEditor2 = new Telerik.WinControls.UI.RadRichTextEditor();
-            this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
-            this.radRichTextEditor1 = new Telerik.WinControls.UI.RadRichTextEditor();
+            this.radTreeView1 = new Telerik.WinControls.UI.RadTreeView();
             this.Build = new Telerik.WinControls.UI.TileGroupElement();
             this.BuildAll = new Telerik.WinControls.UI.RadTileElement();
             this.BuildProgram = new Telerik.WinControls.UI.RadTileElement();
@@ -60,7 +58,6 @@
             this.Copy = new Telerik.WinControls.UI.RadTileElement();
             this.Delete = new Telerik.WinControls.UI.RadTileElement();
             this.radTileElement2 = new Telerik.WinControls.UI.RadTileElement();
-            this.radTreeView1 = new Telerik.WinControls.UI.RadTreeView();
             this.donutShape1 = new Telerik.WinControls.Tests.DonutShape();
             this.ellipseShape1 = new Telerik.WinControls.EllipseShape();
             this.starShape1 = new Telerik.WinControls.UI.StarShape();
@@ -68,13 +65,14 @@
             this.tabVsShape1 = new Telerik.WinControls.UI.TabVsShape();
             this.officeShape1 = new Telerik.WinControls.UI.OfficeShape();
             this.chamferedRectShape1 = new Telerik.WinControls.ChamferedRectShape();
+            this.Typetext = new System.Windows.Forms.RichTextBox();
+            this.outputconsole = new System.Windows.Forms.RichTextBox();
+            this.radProgressBar1 = new Telerik.WinControls.UI.RadProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.radPanorama1)).BeginInit();
             this.radPanorama1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radRichTextEditor2)).BeginInit();
-            this.radRichTextEditor2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radRichTextEditor1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTreeView1)).BeginInit();
+            this.radTreeView1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radProgressBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,9 +95,9 @@
             this.radPanorama1.AutoScroll = true;
             this.radPanorama1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
             this.radPanorama1.CellSize = new System.Drawing.Size(50, 50);
-            this.radPanorama1.Controls.Add(this.radRichTextEditor1);
+            this.radPanorama1.Controls.Add(this.outputconsole);
+            this.radPanorama1.Controls.Add(this.Typetext);
             this.radPanorama1.Controls.Add(this.radTreeView1);
-            this.radPanorama1.Controls.Add(this.radRichTextEditor2);
             this.radPanorama1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radPanorama1.Groups.AddRange(new Telerik.WinControls.RadItem[] {
             this.Build,
@@ -126,43 +124,63 @@
             this.radPanorama1.Text = "radPanorama1";
             this.radPanorama1.Click += new System.EventHandler(this.radPanorama1_Click);
             // 
-            // radRichTextEditor2
+            // radTreeView1
             // 
-            this.radRichTextEditor2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.radRichTextEditor2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(189)))), ((int)(((byte)(232)))));
-            this.radRichTextEditor2.CaretWidth = float.NaN;
-            this.radRichTextEditor2.Controls.Add(this.radLabel1);
-            this.radRichTextEditor2.Location = new System.Drawing.Point(9, 423);
-            this.radRichTextEditor2.Name = "radRichTextEditor2";
-            this.radRichTextEditor2.SelectionFill = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(78)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.radRichTextEditor2.Size = new System.Drawing.Size(711, 88);
-            this.radRichTextEditor2.TabIndex = 2;
-            this.radRichTextEditor2.Click += new System.EventHandler(this.radRichTextEditor2_Click);
+            this.radTreeView1.AllowAdd = true;
+            this.radTreeView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.radTreeView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
+            this.radTreeView1.Controls.Add(this.radProgressBar1);
+            this.radTreeView1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.radTreeView1.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radTreeView1.ForeColor = System.Drawing.Color.Black;
+            this.radTreeView1.LineStyle = Telerik.WinControls.UI.TreeLineStyle.DashDot;
+            this.radTreeView1.Location = new System.Drawing.Point(12, 125);
+            this.radTreeView1.Name = "radTreeView1";
+            radTreeNode1.Expanded = true;
+            radTreeNode1.Name = "Project";
+            radTreeNode2.Expanded = true;
+            radTreeNode2.Name = "Sources";
+            radTreeNode3.Name = "Main";
+            radTreeNode3.Text = "Main.C";
+            radTreeNode2.Nodes.AddRange(new Telerik.WinControls.UI.RadTreeNode[] {
+            radTreeNode3});
+            radTreeNode2.Text = "Sources";
+            radTreeNode4.Expanded = true;
+            radTreeNode4.Name = "Header";
+            radTreeNode5.Name = "Main";
+            radTreeNode5.Text = "Main.H";
+            radTreeNode4.Nodes.AddRange(new Telerik.WinControls.UI.RadTreeNode[] {
+            radTreeNode5});
+            radTreeNode4.Text = "Header Files";
+            radTreeNode6.Name = "Binaries";
+            radTreeNode6.Text = "Binaries";
+            radTreeNode7.Expanded = true;
+            radTreeNode7.Name = "output";
+            radTreeNode8.Name = "Main";
+            radTreeNode8.Text = "Main.hex";
+            radTreeNode7.Nodes.AddRange(new Telerik.WinControls.UI.RadTreeNode[] {
+            radTreeNode8});
+            radTreeNode7.Text = "Output Files";
+            radTreeNode1.Nodes.AddRange(new Telerik.WinControls.UI.RadTreeNode[] {
+            radTreeNode2,
+            radTreeNode4,
+            radTreeNode6,
+            radTreeNode7});
+            radTreeNode1.Text = "Project Explorer";
+            this.radTreeView1.Nodes.AddRange(new Telerik.WinControls.UI.RadTreeNode[] {
+            radTreeNode1});
+            this.radTreeView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             // 
-            // radLabel1
             // 
-            this.radLabel1.Location = new System.Drawing.Point(3, 3);
-            this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(85, 18);
-            this.radLabel1.TabIndex = 1;
-            this.radLabel1.Text = "Console Output";
-            this.radLabel1.Click += new System.EventHandler(this.radLabel1_Click);
             // 
-            // radRichTextEditor1
-            // 
-            this.radRichTextEditor1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.radRichTextEditor1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(189)))), ((int)(((byte)(232)))));
-            this.radRichTextEditor1.CaretWidth = float.NaN;
-            this.radRichTextEditor1.LayoutMode = Telerik.WinForms.Documents.Model.DocumentLayoutMode.Flow;
-            this.radRichTextEditor1.Location = new System.Drawing.Point(169, 125);
-            this.radRichTextEditor1.Name = "radRichTextEditor1";
-            this.radRichTextEditor1.SelectionFill = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(78)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.radRichTextEditor1.Size = new System.Drawing.Size(551, 292);
-            this.radRichTextEditor1.TabIndex = 0;
-            this.radRichTextEditor1.Click += new System.EventHandler(this.radRichTextEditor1_Click);
+            this.radTreeView1.RootElement.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            this.radTreeView1.Size = new System.Drawing.Size(151, 292);
+            this.radTreeView1.SpacingBetweenNodes = 2;
+            this.radTreeView1.TabIndex = 3;
+            this.radTreeView1.Text = "radTreeView1";
+            this.radTreeView1.TreeIndent = 15;
+            this.radTreeView1.SelectedNodeChanged += new Telerik.WinControls.UI.RadTreeView.RadTreeViewEventHandler(this.radTreeView1_SelectedNodeChanged);
             // 
             // Build
             // 
@@ -195,11 +213,11 @@
             this.BuildProgram.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(24)))), ((int)(((byte)(91)))));
             this.BuildProgram.ClipDrawing = true;
             this.BuildProgram.ClipText = true;
-            this.BuildProgram.ColSpan = 1;
             this.BuildProgram.Column = 1;
             this.BuildProgram.Name = "BuildProgram";
             this.BuildProgram.Text = "Build+Program";
             this.BuildProgram.TextWrap = true;
+            this.BuildProgram.Click += new System.EventHandler(this.BuildProgram_Click);
             // 
             // Tools
             // 
@@ -215,7 +233,6 @@
             this.Programmer.AccessibleDescription = "Programmer";
             this.Programmer.AccessibleName = "Programmer";
             this.Programmer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(190)))), ((int)(((byte)(127)))));
-            this.Programmer.ColSpan = 1;
             this.Programmer.Name = "Programmer";
             this.Programmer.Shape = null;
             this.Programmer.Text = "Programmer";
@@ -228,7 +245,6 @@
             this.UART.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
             this.UART.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(190)))), ((int)(((byte)(127)))));
             this.UART.BorderBottomWidth = 1F;
-            this.UART.ColSpan = 1;
             this.UART.Column = 1;
             this.UART.Name = "UART";
             this.UART.Shape = null;
@@ -250,7 +266,6 @@
             this.NewProject.AccessibleDescription = "New Project";
             this.NewProject.AccessibleName = "New Project";
             this.NewProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(30)))), ((int)(((byte)(117)))));
-            this.NewProject.ColSpan = 1;
             this.NewProject.Name = "NewProject";
             this.NewProject.Text = "New";
             this.NewProject.Click += new System.EventHandler(this.NewProject_Click);
@@ -260,10 +275,10 @@
             this.OpenProject.AccessibleDescription = "Open Project";
             this.OpenProject.AccessibleName = "Open Project";
             this.OpenProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(30)))), ((int)(((byte)(117)))));
-            this.OpenProject.ColSpan = 1;
             this.OpenProject.Column = 1;
             this.OpenProject.Name = "OpenProject";
             this.OpenProject.Text = "Open";
+            this.OpenProject.Click += new System.EventHandler(this.OpenProject_Click);
             // 
             // Save
             // 
@@ -273,6 +288,7 @@
             this.Save.Column = 2;
             this.Save.Name = "Save";
             this.Save.Text = "Save";
+            this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
             // SaveAs
             // 
@@ -282,6 +298,7 @@
             this.SaveAs.Column = 3;
             this.SaveAs.Name = "SaveAs";
             this.SaveAs.Text = "Save As";
+            this.SaveAs.Click += new System.EventHandler(this.SaveAs_Click);
             // 
             // Edit
             // 
@@ -346,67 +363,42 @@
             this.radTileElement2.Name = "radTileElement2";
             this.radTileElement2.Text = "radTileElement2";
             // 
-            // radTreeView1
-            // 
-            this.radTreeView1.AllowAdd = true;
-            this.radTreeView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.radTreeView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
-            this.radTreeView1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.radTreeView1.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radTreeView1.ForeColor = System.Drawing.Color.Black;
-            this.radTreeView1.LineStyle = Telerik.WinControls.UI.TreeLineStyle.DashDot;
-            this.radTreeView1.Location = new System.Drawing.Point(12, 125);
-            this.radTreeView1.Name = "radTreeView1";
-            radTreeNode1.Expanded = true;
-            radTreeNode1.Name = "Project";
-            radTreeNode2.Expanded = true;
-            radTreeNode2.Name = "Sources";
-            radTreeNode3.Name = "Main";
-            radTreeNode3.Text = "Main.C";
-            radTreeNode2.Nodes.AddRange(new Telerik.WinControls.UI.RadTreeNode[] {
-            radTreeNode3});
-            radTreeNode2.Text = "Sources";
-            radTreeNode4.Expanded = true;
-            radTreeNode4.Name = "Header";
-            radTreeNode5.Name = "Main";
-            radTreeNode5.Text = "Main.H";
-            radTreeNode4.Nodes.AddRange(new Telerik.WinControls.UI.RadTreeNode[] {
-            radTreeNode5});
-            radTreeNode4.Text = "Header Files";
-            radTreeNode6.Name = "Binaries";
-            radTreeNode6.Text = "Binaries";
-            radTreeNode7.Expanded = true;
-            radTreeNode7.Name = "output";
-            radTreeNode8.Name = "Main";
-            radTreeNode8.Text = "Main.hex";
-            radTreeNode7.Nodes.AddRange(new Telerik.WinControls.UI.RadTreeNode[] {
-            radTreeNode8});
-            radTreeNode7.Text = "Output Files";
-            radTreeNode1.Nodes.AddRange(new Telerik.WinControls.UI.RadTreeNode[] {
-            radTreeNode2,
-            radTreeNode4,
-            radTreeNode6,
-            radTreeNode7});
-            radTreeNode1.Text = "Project Explorer";
-            this.radTreeView1.Nodes.AddRange(new Telerik.WinControls.UI.RadTreeNode[] {
-            radTreeNode1});
-            this.radTreeView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            // 
-            // 
-            // 
-            this.radTreeView1.RootElement.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            this.radTreeView1.Size = new System.Drawing.Size(151, 292);
-            this.radTreeView1.SpacingBetweenNodes = 2;
-            this.radTreeView1.TabIndex = 3;
-            this.radTreeView1.Text = "radTreeView1";
-            this.radTreeView1.TreeIndent = 15;
-            this.radTreeView1.SelectedNodeChanged += new Telerik.WinControls.UI.RadTreeView.RadTreeViewEventHandler(this.radTreeView1_SelectedNodeChanged);
-            // 
             // starShape1
             // 
             this.starShape1.Arms = 5;
             this.starShape1.InnerRadiusRatio = 0.375F;
+            // 
+            // Typetext
+            // 
+            this.Typetext.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Typetext.Location = new System.Drawing.Point(180, 125);
+            this.Typetext.Name = "Typetext";
+            this.Typetext.Size = new System.Drawing.Size(558, 292);
+            this.Typetext.TabIndex = 4;
+            this.Typetext.Text = "";
+            // 
+            // outputconsole
+            // 
+            this.outputconsole.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.outputconsole.Location = new System.Drawing.Point(12, 423);
+            this.outputconsole.Name = "outputconsole";
+            this.outputconsole.ReadOnly = true;
+            this.outputconsole.Size = new System.Drawing.Size(726, 75);
+            this.outputconsole.TabIndex = 5;
+            this.outputconsole.Text = "";
+            this.outputconsole.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
+            // 
+            // radProgressBar1
+            // 
+            this.radProgressBar1.Location = new System.Drawing.Point(3, 271);
+            this.radProgressBar1.Name = "radProgressBar1";
+            this.radProgressBar1.Size = new System.Drawing.Size(148, 21);
+            this.radProgressBar1.TabIndex = 7;
+            this.radProgressBar1.Text = "radProgressBar1";
+            this.radProgressBar1.Click += new System.EventHandler(this.radProgressBar1_Click);
             // 
             // RadForm1
             // 
@@ -424,12 +416,9 @@
             this.Load += new System.EventHandler(this.RadForm1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.radPanorama1)).EndInit();
             this.radPanorama1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radRichTextEditor2)).EndInit();
-            this.radRichTextEditor2.ResumeLayout(false);
-            this.radRichTextEditor2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radRichTextEditor1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTreeView1)).EndInit();
+            this.radTreeView1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.radProgressBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -456,10 +445,7 @@
         private Telerik.WinControls.UI.RadTileElement Programmer;
         private Telerik.WinControls.UI.RadTileElement UART;
         private Telerik.WinControls.UI.RadTileElement radTileElement1;
-        private Telerik.WinControls.UI.RadRichTextEditor radRichTextEditor1;
         private Telerik.WinControls.UI.RadTileElement radTileElement2;
-        private Telerik.WinControls.UI.RadLabel radLabel1;
-        private Telerik.WinControls.UI.RadRichTextEditor radRichTextEditor2;
         private Telerik.WinControls.OldShapeEditor.CustomShape customShape1;
         private Telerik.WinControls.UI.RadTreeView radTreeView1;
         private Telerik.WinControls.Tests.DonutShape donutShape1;
@@ -469,6 +455,9 @@
         private Telerik.WinControls.UI.TabVsShape tabVsShape1;
         private Telerik.WinControls.UI.OfficeShape officeShape1;
         private Telerik.WinControls.ChamferedRectShape chamferedRectShape1;
+        private System.Windows.Forms.RichTextBox outputconsole;
+        private System.Windows.Forms.RichTextBox Typetext;
+        private Telerik.WinControls.UI.RadProgressBar radProgressBar1;
 
     }
 }
